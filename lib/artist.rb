@@ -30,10 +30,10 @@ class Artist
  def self.find_or_create_by_name(name)
   #  binding.pry
    if (self.all.detect {|artist| artist.name == name}) == nil
-      puts "yes"
+      self.all.detect {|artist| artist.name == name}
    else
-     puts "no"
-   end 
+     artist = self.new(name)
+   end
  end
 
  def print_songs
