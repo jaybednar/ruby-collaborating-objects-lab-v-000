@@ -2,7 +2,7 @@ class MP3Importer
   attr_accessor :files, :import
 
   def initialize(list_of_filenames)
-
+    
   end
 
   def files
@@ -12,5 +12,5 @@ class MP3Importer
   def import
 
   end
-  
+
 end
