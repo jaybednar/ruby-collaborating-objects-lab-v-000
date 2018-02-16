@@ -7,8 +7,8 @@ class MP3Importer
   end
 
   def files
-    @files = Dir.entries(@path)
-    @files.delete_if {|file| file.length < 3}
+    @files = Dir.entries(@path).delete_if {|file| file.length < 3}
+    # @files
     # binding.pry
   end
 
