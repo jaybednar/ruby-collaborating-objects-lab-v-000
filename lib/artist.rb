@@ -31,6 +31,9 @@ class Artist
   #  binding.pry
    if (self.all.detect {|artist| artist.name == name}) == nil
       puts "yes"
+   else
+     puts "no"
+   end 
  end
 
  def print_songs
