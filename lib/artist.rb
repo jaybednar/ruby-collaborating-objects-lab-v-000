@@ -29,10 +29,10 @@ class Artist
 
  def self.find_or_create_by_name(name)
    binding.pry
-  if self.all.include?(artist.name)
-    artist
-  else
+  if artist.name == nil
     artist = Artist.new(name)
+  else
+    artist
   end
  end
 
