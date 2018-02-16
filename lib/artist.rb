@@ -28,6 +28,7 @@ class Artist
  end
 
  def self.find_or_create_by_name(name)
+   binding.pry
    if self.all.name?
     artist = Artist.new(name)
 
