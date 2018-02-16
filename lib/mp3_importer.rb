@@ -8,7 +8,7 @@ class MP3Importer
 
   def files
     @files = Dir.entries(@path)
-    # @files.map {|file| file.split}
+    @files.delet_if {|file| file.length < 3}
     binding.pry
   end
 
