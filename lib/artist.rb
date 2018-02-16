@@ -31,7 +31,7 @@ class Artist
    #binding.pry
    if self.all.detect {|artist| artist.name == name}
      artist
-   else 
+   else
     artist = Artist.new(name)
   end
  end
