@@ -2,7 +2,7 @@ class Artist
  attr_accessor :name, :genre
 
  @@all = []
- 
+
  def initialize(name)
    @name = name
    @songs = []
@@ -13,7 +13,19 @@ class Artist
  end
 
  def save
-   @@all << self 
+   @@all << self
+ end
+
+ def self.find_or_create_by_name(name)
+   if @@all.include? artist.name
+     artist
+   else
+     artist = self.new(name)
+   end
  end 
+
+
+
+ end
 
 end
