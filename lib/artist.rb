@@ -1,3 +1,9 @@
 class Artist
+ attr_accessor :name, :genre
 
-end 
+ def initialize(name)
+   @name = name
+ end
+
+ 
+end
