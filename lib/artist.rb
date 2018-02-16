@@ -31,7 +31,7 @@ class Artist
   #  binding.pry
   if @@all.include?(@artist.name)
     @artist
-  elsif artist.name
+  else
     @artist = Artist.new(name)
   end
  end
