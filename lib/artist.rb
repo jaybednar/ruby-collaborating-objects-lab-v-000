@@ -27,14 +27,14 @@ class Artist
    @@all << self
  end
 
- # def self.find_or_create_by_name(name)
- #  #  binding.pry
- #  if @@all.include?
- #
- #  else
- #    artist = Artist.new(name)
- #  end
- # end
+ def self.find_or_create_by_name(name)
+  #  binding.pry
+  if @@all.include?
+
+  else
+    artist = Artist.new(name)
+  end
+ end
 
  def print_songs
    self.songs
