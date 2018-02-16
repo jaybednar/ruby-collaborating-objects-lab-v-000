@@ -3,7 +3,7 @@ class MP3Importer
   attr_accessor :files, :importer
 
   def initialize(file_path)
-    binding.pry
+    # binding.pry
     @importer = Dir[file_path]
   end
 
