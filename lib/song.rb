@@ -13,9 +13,9 @@ class Song
     song.artist = Artist.new(filename.split(" - ")[0])
     song
   end
-
+binding.pry
   def artist_name=(name)
-    binding.pry
+
 	  # Artist.find_or_create_by_name(name)
 
 	end
