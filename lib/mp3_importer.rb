@@ -16,7 +16,7 @@ class MP3Importer
 
   def import
     binding.pry
-    @files.each do |filename|
+    Dir.entries(@path).delete_if {|file| file.length < 3}.each do |filename|
       Song.new_by_filename(filename)
     end
 
