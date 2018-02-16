@@ -28,11 +28,12 @@ class Artist
  end
 
  def self.find_or_create_by_name(name)
+   binding.pry
   if self.all.include?(artist.name)
     artist
   else
     artist = Artist.new(name)
-  end 
+  end
  end
 
  def print_songs
