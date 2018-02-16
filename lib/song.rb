@@ -15,8 +15,8 @@ class Song
   end
 binding.pry
   def artist_name=(artist_name)
-    song
-	  Artist.find_or_create_by_name(name)
+
+	  Artist.find_or_create_by_name(artist_name)
 
 	end
 
