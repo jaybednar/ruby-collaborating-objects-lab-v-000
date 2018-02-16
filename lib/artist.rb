@@ -28,12 +28,12 @@ class Artist
  end
 
  def self.find_or_create_by_name(name)
-   binding.pry
+   #binding.pry
    if self.all.detect {|artist| artist.name == name}
-     artist 
+     artist
    else 
     artist = Artist.new(name)
-  end 
+  end
  end
 
  def print_songs
