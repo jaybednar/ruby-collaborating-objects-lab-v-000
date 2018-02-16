@@ -30,7 +30,7 @@ class Artist
  def self.find_or_create_by_name(name)
   #  binding.pry
   if @artist.name == nil
-    artist = Artist.new(name)
+    @artist = Artist.new(name)
   elsif artist.name
     artist
   end
