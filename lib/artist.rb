@@ -26,6 +26,7 @@ class Artist
  def save
    @@all << self
  end
+
 def create(name)
   artist = Artist.new(name)
   artist.save
