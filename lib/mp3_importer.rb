@@ -4,7 +4,7 @@ class MP3Importer
 
   def initialize(file_path)
     # binding.pry
-    @path = Dir[file_path]
+    @path = Dir[file_path][0]
   end
 
   def files
