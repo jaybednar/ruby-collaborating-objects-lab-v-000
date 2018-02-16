@@ -3,6 +3,8 @@ require 'pry'
 class Song
   attr_accessor :name, :artist, :filename
 
+
+
   def initialize(name)
     @name = name
   end
@@ -11,7 +13,8 @@ class Song
     # binding.pry
     # @filename = filename
     song = self.new(filename.split(" - ")[1])
-    song.artist_name(filename.split(" - ")[0]) = Artist.new(filename.split(" - ")[0])
+    song.artist_name = filename.split(" - ")[0]
+
     song
   end
 
