@@ -7,7 +7,8 @@ class MP3Importer
   end
 
   def files
-    Dir.entries(@path)
+    @files = Dir.entries(@path)
+    # @files.map {|file| file.split}
     binding.pry
   end
 
