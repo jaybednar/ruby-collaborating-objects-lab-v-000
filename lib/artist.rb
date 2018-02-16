@@ -30,7 +30,7 @@ class Artist
 def self.create(name)
   artist = Artist.new(name)
   artist.save
-  artist 
+  artist
 end
 
  def self.find_or_create_by_name(name)
@@ -38,9 +38,9 @@ end
 
  end
 
- # def print_songs
- #   self.songs
- # end
+ def print_songs
+   self.songs
+ end
 
 
 
