@@ -31,7 +31,7 @@ class Artist
    binding.pry
    if self.all.name?
     artist = Artist.new(name)
-
+  end 
  end
 
  def print_songs
