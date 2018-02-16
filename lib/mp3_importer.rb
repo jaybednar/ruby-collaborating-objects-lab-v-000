@@ -3,11 +3,11 @@ class MP3Importer
   attr_accessor :files, :importer, :path
 
   def initialize(file_path)
-    @path = Dir[file_path][0]
+    @path = Dir[file_path.mp3][0]
   end
 
   def files
-    @files = Dir.entries(@path.mp3)
+    @files = Dir.entries(@path)
     # @files.map {|file| file.split}
     # binding.pry
   end
