@@ -29,9 +29,9 @@ class Artist
 
  def self.find_or_create_by_name(name)
   #  binding.pry
-  if artist.name == nil
+  if @artist.name == nil
     artist = Artist.new(name)
-  else
+  elsif artist.name
     artist
   end
  end
