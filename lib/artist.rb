@@ -31,9 +31,9 @@ class Artist
    !self.all.detect{|artist| artist.name == name} ? artist = self.new(name) : self.all.detect {|artist| artist.name == name}
  end
 
- def print_songs
-   self.songs
- end
+ # def print_songs
+ #   self.songs
+ # end
 
 
 
