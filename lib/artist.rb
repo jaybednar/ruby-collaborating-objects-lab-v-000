@@ -29,8 +29,8 @@ class Artist
 
  def self.find_or_create_by_name(name)
   #  binding.pry
-   !self.all.detect {|artist| artist.name == name} ? artist = self.new(name) : self.all.detect {|artist| artist.name == name}
-  
+   !self.all.detect{|artist| artist.name == name} ? artist = self.new(name) : self.all.detect {|artist| artist.name == name}
+
  end
 
  def print_songs
